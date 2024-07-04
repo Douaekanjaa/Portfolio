@@ -1,6 +1,6 @@
 "use client";
 
-import { Socials } from "../../constants/index";
+/* import { Socials } from "../../constants/index"; */
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
@@ -8,6 +8,43 @@ import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const Socials = [
+
+    {
+      name: "LinkedIn",
+      src: "/imgs/linkedin.svg",
+      url: "https://www.linkedin.com/in/douae-kanjaa/"
+    },
+    {
+      name: "Github",
+      src: "/imgs/github.png",
+      url: "https://github.com/Douaekanjaa"
+    },
+   
+  ];
+  const links = [
+    {
+      name: "Home",
+      hash: "#home",
+    },
+    {
+      name: "AboutMe",
+      hash: "#aboutme",
+    },
+    {
+      name: "Projects",
+      hash: "#projects",
+    },
+    {
+      name: "SkillsSection",
+      hash: "#skillssection",
+    },
+   
+    {
+      name: "Contact",
+      hash: "#contact",
+    },
+  ] as const;
 
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-5 md:px-10">

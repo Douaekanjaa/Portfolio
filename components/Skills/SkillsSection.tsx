@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { skillsData } from "@/constants/index";
+/* import { skillsData } from "@/constants/index"; */
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -33,7 +33,39 @@ const SkillsSection = () => {
     visible: { opacity: 1, x: 0 },
     hover: { scale: 1.05, transition: { duration: 0.2 } },
   };
-
+  const skillsData = {
+    frontend: [
+      { name: "HTML", image: "/imgs/html.png" },
+      { name: "CSS", image: "/imgs/css.png" },
+      { name: "Tailwind CSS", image: "/imgs/tailwind.png" },
+      { name: "Bootstrap", image: "/imgs/bootstrap.svg" },
+      { name: "JavaScript", image: "/imgs/js.png" },
+      { name: "React", image: "/imgs/react.png" },
+      { name: "Redux", image: "/imgs/redux.png" },
+      { name: "TypeScript", image: "/imgs/ts.png" },
+      { name: "NextJS", image: "/imgs/next.png" },
+   
+    ],
+    backend: [
+      { name: "PHP", image: "/imgs/php.svg" },
+      { name: "Laravel", image: "/imgs/laravel.svg" },
+      { name: "Node.js", image: "/imgs/node-js.png" },
+      { name: "Express", image: "/imgs/express.png" },
+      { name: "Python", image: "/imgs/python.svg" },
+    ],
+    database: [
+      { name: "MongoDB", image: "/imgs/mongodb.svg" },
+      { name: "MySQL", image: "/imgs/mysql2.svg" },
+    ],
+    others: [
+      { name: "Git", image: "/imgs/git.svg" },
+      { name: "GitHub", image: "/imgs/github.png" },
+      { name: "Postman", image: "/imgs/postman.svg" },
+      { name: "Docker", image: "/imgs/docker.svg" },
+      { name: "Figma", image: "/imgs/figma.svg" },
+     
+    ],
+  };
   return (
     <div className="skills-section py-10" ref={ref}>
       <motion.h2

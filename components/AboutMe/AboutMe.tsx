@@ -1,9 +1,23 @@
 
 import React from "react";
 import Image from "next/image";
-import { Socials } from "@/constants/index";
+/* import { Socials } from "@/constants/index"; */
 
 const AboutMe = () => {
+  const Socials = [
+
+    {
+      name: "LinkedIn",
+      src: "/imgs/linkedin.svg",
+      url: "https://www.linkedin.com/in/douae-kanjaa/"
+    },
+    {
+      name: "Github",
+      src: "/imgs/github.png",
+      url: "https://github.com/Douaekanjaa"
+    },
+   
+  ];
   return (
     <section id="about-me" className="py-10 text-white">
       <div className="container mx-auto px-5 md:px-10">
