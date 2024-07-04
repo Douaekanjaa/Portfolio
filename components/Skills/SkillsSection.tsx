@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 /* import { skillsData } from "@/constants/index"; */
@@ -33,7 +31,17 @@ const SkillsSection = () => {
     visible: { opacity: 1, x: 0 },
     hover: { scale: 1.05, transition: { duration: 0.2 } },
   };
-  const skillsData = {
+
+  type Skill = {
+    name: string;
+    image: string;
+  };
+
+  type SkillsData = {
+    [key: string]: Skill[];
+  };
+
+  const skillsData: SkillsData = {
     frontend: [
       { name: "HTML", image: "/imgs/html.png" },
       { name: "CSS", image: "/imgs/css.png" },
@@ -44,7 +52,6 @@ const SkillsSection = () => {
       { name: "Redux", image: "/imgs/redux.png" },
       { name: "TypeScript", image: "/imgs/ts.png" },
       { name: "NextJS", image: "/imgs/next.png" },
-   
     ],
     backend: [
       { name: "PHP", image: "/imgs/php.svg" },
@@ -63,9 +70,9 @@ const SkillsSection = () => {
       { name: "Postman", image: "/imgs/postman.svg" },
       { name: "Docker", image: "/imgs/docker.svg" },
       { name: "Figma", image: "/imgs/figma.svg" },
-     
     ],
   };
+
   return (
     <div className="skills-section py-10" ref={ref}>
       <motion.h2
@@ -78,7 +85,7 @@ const SkillsSection = () => {
       </motion.h2>
       <div className="container mx-auto">
         <motion.div
-          className="grid grid-cols-1 justify-center px-10  md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 justify-center px-10 md:grid-cols-2 gap-8"
           variants={containerVariants}
         >
           {Object.keys(skillsData).map((category) => (
@@ -88,21 +95,20 @@ const SkillsSection = () => {
               variants={itemVariants}
             >
               <motion.h3
-                className="text-2xl   flex justify-center font-semibold text-center text-white mb-4"
+                className="text-2xl flex justify-center font-semibold text-center text-white mb-4"
                 variants={itemVariants}
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
                 {category.charAt(0).toUpperCase() + category.slice(1)}
               </motion.h3>
-              <div className="grid grid-cols-3  justify-center py-10 gap-4">
+              <div className="grid grid-cols-3 justify-center py-10 gap-4">
                 {skillsData[category].map((skill, index) => (
                   <motion.div
                     key={skill.name}
                     className="my-3 overflow-hidden"
                     variants={skillVariants}
                     whileHover="hover"
-                   
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
                     <Image
