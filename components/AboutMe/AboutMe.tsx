@@ -1,11 +1,9 @@
-
 import React from "react";
 import Image from "next/image";
 /* import { Socials } from "@/constants/index"; */
 
 const AboutMe = () => {
   const Socials = [
-
     {
       name: "LinkedIn",
       src: "/imgs/linkedin.svg",
@@ -15,9 +13,9 @@ const AboutMe = () => {
       name: "Github",
       src: "/imgs/github.png",
       url: "https://github.com/Douaekanjaa"
-    },
-   
+    }
   ];
+
   return (
     <section id="about-me" className="py-10 text-white">
       <div className="container mx-auto px-5 md:px-10">
@@ -31,18 +29,15 @@ const AboutMe = () => {
               seamless digital experiences. Currently, I&apos;m eager to embark on
               new opportunities in web development.
             </p>
-
             <p className="text-md mb-4">
-              <span className="">
-                {" "}
+              <span>
                 Reach out at{" "}
                 <a
                   href="mailto:kanjaadouae1@gmail.com"
                   className="text-purple-300 shadow-2xl hover:underline"
                 >
                   kanjaadouae1@gmail.com
-                </a>
-                .{" "}
+                </a>.
               </span>
             </p>
             <div className="flex flex-col gap-4 justify-center md:justify-start">
@@ -61,7 +56,7 @@ const AboutMe = () => {
                       height={24}
                       className="hover:scale-110 transition-transform duration-300"
                     />
-                    <span className="font-medium text-purple-400  hover:underline">
+                    <span className="font-medium text-purple-400 hover:underline">
                       {social.name}
                     </span>
                   </a>
