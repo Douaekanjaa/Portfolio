@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Socials } from "../../constants/index";
+import { Socials } from "@/constants/index";
 
 const AboutMe = () => {
   return (
