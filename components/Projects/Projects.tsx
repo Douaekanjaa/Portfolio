@@ -2,7 +2,7 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { projectsData } from "../../constants/index";
+import { projectsData } from "@/constants/index";
 import Project from "./Project";
 
 export default function Projects() {

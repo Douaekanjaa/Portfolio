@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { skillsData } from "../../constants/index";
+import { skillsData } from "@/constants/index";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
