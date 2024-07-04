@@ -25,10 +25,10 @@ const AboutMe = () => {
           <div className="order-2 md:order-1 text-center md:text-left">
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
             <p className="text-md mb-4">
-              Hi, I'm Douae Kanjaa, a passionate full-stack web developer with a
+              Hi, I&apos;m Douae Kanjaa, a passionate full-stack web developer with a
               strong interest in creating engaging and user-friendly web
               applications. I thrive on solving complex problems and crafting
-              seamless digital experiences. Currently, I'm eager to embark on
+              seamless digital experiences. Currently, I&apos;m eager to embark on
               new opportunities in web development.
             </p>
 

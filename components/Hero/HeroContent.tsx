@@ -31,10 +31,11 @@ const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 font-bold text-white max-w-[600px] w-auto h-auto text-6xl "
         >
           <span className="text-lg md:text-6xl">
-            Hello, I am<br />
+            Hello, I am
+            <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 gradient-text">
               {" "}
-              Douae  Kanjaa{" "}
+              Douae Kanjaa{" "}
             </span>
           </span>
         </motion.div>
@@ -44,7 +45,8 @@ const HeroContent = () => {
           className="md:text-lg text-xs text-gray-400 my-3 md:my-5 max-w-[600px] "
         >
           Full Stack Developer passionate about clean, efficient code and
-          turning ideas into reality. Let's build something amazing together.
+          turning ideas into reality. Let&apos;s build something amazing
+          together.
         </motion.p>
 
         <div className="flex items-center h-full w-full justify-center md:justify-start">
