@@ -64,7 +64,7 @@ const HeroContent = () => {
           <motion.a
             variants={slideInFromLeft(1)}
             className="button-primary md:py-3 md:px-7 py-2 px-8 flex items-center justify-center text-center text-white cursor-pointer rounded-lg max-w-[200px] hover:bg-purple-700 transition-all duration-300 mt-4 md:mt-0 md:ml-4"
-            href="/cv.pdf"
+            href="https://drive.google.com/file/d/1fL-ELtzFXQa4cCekSQOtyvjUlTIBcIJ6/view?usp=sharing"
             download
           >
             <span className="text-xs md:text-sm">Download CV</span>
