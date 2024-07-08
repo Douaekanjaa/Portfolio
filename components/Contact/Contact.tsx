@@ -21,7 +21,7 @@ export default function Contact() {
     }
 
     toast.success("Email sent successfully!");
-    event.target.reset(); // Reset the form after successful submission
+    event.target.reset();
   };
 
   return (
