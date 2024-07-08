@@ -8,10 +8,10 @@ import SubmitBtn from "./submit-btn";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
 
     const { data, error } = await sendEmail(formData);
 
@@ -21,7 +21,7 @@ export default function Contact() {
     }
 
     toast.success("Email sent successfully!");
-    event.target.reset();
+    event.currentTarget.reset();
   };
 
   return (
@@ -36,7 +36,7 @@ export default function Contact() {
       <Toaster />
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <p className="text-gray-100 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:kanjaadouae1@gmail.com">
           kanjaadouae1@gmail.com
