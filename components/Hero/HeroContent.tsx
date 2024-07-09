@@ -30,10 +30,10 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="flex flex-col gap-6 mt-6 font-bold text-white max-w-[600px] w-auto h-auto text-6xl "
         >
-          <span className="text-lg md:text-6xl">
+          <span className="text-3xl md:text-6xl">
             Hello, I am
             <br />
-            <span className="md:text-transparent text-purple-600 md:bg-clip-text md:bg-gradient-to-r md:from-purple-500 md:to-cyan-500 md:gradient-text">
+            <span className="md:text-transparent text-purple-400 md:bg-clip-text md:bg-gradient-to-r md:from-purple-500 md:to-cyan-500 md:gradient-text">
               {" "}
               Douae Kanjaa{" "}
             </span>
@@ -42,7 +42,7 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="md:text-lg text-xs text-gray-400 my-3 md:my-5 max-w-[600px] "
+          className="md:text-lg text-sm text-gray-300 my-3 md:my-5 max-w-[600px] "
         >
           Full Stack Developer passionate about clean, efficient code and
           turning ideas into reality. Let&apos;s build something amazing
